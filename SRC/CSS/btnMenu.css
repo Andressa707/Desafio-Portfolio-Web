@@ -1,0 +1,31 @@
+:root {
+    --cor-primaria: #F6f6f6;
+    --cor-secundaria: #DCD6F7;
+    --co-terciaria: #424874;
+    --cor-destaque: #bfacee;
+}
+
+.btnMenu {
+    display: block;
+    background-repeat: no-repeat;
+    padding: 20px 15px;
+    background-position: 15px center;
+    text-indent: -9999px;
+}
+
+.btnMenu_open {
+    background-image: url(../Imagem/menu-icone.png);
+}
+
+.btnMenu_close {
+    background-color: var(--cor-destaque);
+    background-image: url(../Imagem/menu-icone-claro.png);
+}
+
+
+@media (min-width: 600px) {
+    .btnMenu {
+      display: none;
+    }
+  }
+  

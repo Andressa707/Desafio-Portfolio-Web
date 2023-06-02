@@ -1,0 +1,254 @@
+:root {
+    --cor-primaria: #F6f6f6;
+    --cor-secundaria: #DCD6F7;
+    --co-terciaria: #424874;
+    --cor-destaque: #bfacee;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.apresentacao__conteudo {
+    margin: 0;
+}
+
+.apresentacao__conteudo__informacoes {
+    display: flex;
+    justify-content: space-around; 
+    padding: 30px 0;
+    background-color: var(--cor-secundaria);
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 90px;
+    gap: 40px;
+}
+
+.titulo__nome {
+    font-family: 'Righteous', cursive;
+    font-size: 65px;
+    font-weight: 400px;
+    color: #424874;
+}
+
+.subtitulo {
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: 2px #470097;
+}
+
+.informacoes__contato {
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    font-size: 30px;
+    color: var(--co-terciaria);
+}
+
+.informacoes__imagem__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.foto_perfil {
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+}
+
+.redes_sociais { 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.links {
+    font-size: 48px;
+    gap: 10px;
+}
+
+.container__principal {
+    margin-left: 50px;
+}
+
+.meio {
+    margin: 0;
+    padding: 0;
+}
+
+.sobre_mim_conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 65px;
+    margin: 80px 0;
+}
+
+.img_decorativa {
+    width: 588px;
+    height: 392px;
+}
+
+strong {
+    font-size: 40px;
+}
+
+.sobre_mim_paragrafo {
+    width: 700px;
+    font-size: 20px;
+    text-align:justify;
+    margin-top: 40px;
+}
+
+.titulos{
+    font-size: 40px;
+    font-weight: 400px;
+    text-align: justify;
+    margin: 30px 0;
+}
+
+
+.educacao, 
+.experiencia,
+.habilidades, 
+.interesses {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.educacao_card {
+    width: 390px;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--cor-secundaria);
+    transition: 0.3 ease-in-out;
+    border: 2px solid transparent;
+}
+
+.experiencia_card {
+    width: 390px;
+    border-radius: 30px;
+    background-color: var(--cor-secundaria);
+    transition: 0.3 ease-in-out;
+    border: 2px solid transparent;
+}
+
+.habilidades_card {
+    width: 459px;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--cor-secundaria);
+    transition: 0.3 ease-in-out;
+    border: 2px solid transparent;
+}
+
+.educacao_card, .experiencia, .habilidades {
+    padding: 40px;
+} 
+
+.educacao_card:hover, .experiencia_card:hover, .habilidades_card:hover {
+    background: radial-gradient(circle at 100% 100%, #dcd6f7 0, #dcd6f7 25px, transparent 25px) 0% 0%/30px 30px no-repeat,
+    radial-gradient(circle at 0 100%, #dcd6f7 0, #dcd6f7 25px, transparent 25px) 100% 0%/30px 30px no-repeat,
+    radial-gradient(circle at 100% 0, #dcd6f7 0, #dcd6f7 25px, transparent 25px) 0% 100%/30px 30px no-repeat,
+    radial-gradient(circle at 0 0, #dcd6f7 0, #dcd6f7 25px, transparent 25px) 100% 100%/30px 30px no-repeat,
+    linear-gradient(#dcd6f7, #dcd6f7) 50% 50%/calc(100% - 10px) calc(100% - 60px) no-repeat,
+    linear-gradient(#dcd6f7, #dcd6f7) 50% 50%/calc(100% - 60px) calc(100% - 10px) no-repeat,
+    linear-gradient(144deg, rgba(182,25,245,0.98) 0%, transparent 40.785%, #a503e2 100%),
+    radial-gradient(at 12% 49%, #daa8f0 0%, #a16fc0 100%) 68% 44%/106% 159%;
+}
+
+.educacao_texto,
+.experiencia_texto,
+.habilidades_texto,
+.habilidades_texto {
+    height: 179px;
+    padding: 0;
+    font-size: 27px;
+    text-align: center;
+}
+
+.interesses_icones {
+    display: flex;
+    flex-direction: row;
+    justify-content: first baseline;
+    cursor: pointer;
+    margin: 50px;
+    gap:20px
+
+}
+
+@media (max-width: 500px) {
+
+    .container__principal{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    .apresentacao__conteudo__informacoes {
+        flex-direction: column;
+    }
+
+    .informacoes {
+        justify-content: center;
+        margin: 20px ;
+    }
+
+    .informacoes__contato {
+        margin:10px;
+        font-size: 30px;
+    }
+
+    .foto_perfil {
+        width: 438px;
+        margin: 20px;
+    }
+
+    .titulo__nome, .subtitulo{
+        margin: 10px;
+        text-align: center;
+    }
+
+    .sobre_mim_conteudo {
+        margin: 70px;
+    }
+
+    .img_decorativa{
+        padding: 50px;
+    }
+
+    .educacao_card, .experiencia_card{
+        margin: 20px;
+        text-align: center;
+    }
+
+    .habilidades_card {
+        margin: 20px;
+        width: 400px;
+        height: 210px;
+    }
+
+    .educacao_texto {
+        font-size: 30px;
+        justify-content: center;
+        margin: 20px;
+    }
+    
+    .experiencia_texto, .habilidades_texto{
+        font-size: 30px;
+        align-items: center;
+    }
+
+}
+  
+

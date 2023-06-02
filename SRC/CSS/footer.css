@@ -1,0 +1,39 @@
+:root {
+    --cor-primaria: #F6f6f6;
+    --cor-secundaria: #DCD6F7;
+    --co-terciaria: #424874;
+    --cor-destaque: #bfacee;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    color: var(--co-terciaria);
+    background-color: var(--cor-secundaria);
+    height: 237px;
+}
+
+.rodape_paragrafo {
+    text-align: center;
+    font-size: 37px;
+    margin: 30px;
+    font-weight: 400px;
+}
+
+a {
+    color: var(--co-terciaria);
+    text-decoration: underline;
+}
+
+.assinatura {
+    margin: 40px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .assinatura{
+        margin: 0;
+        
+    }
+    
+}
